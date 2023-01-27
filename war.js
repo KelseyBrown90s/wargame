@@ -29,12 +29,9 @@ class Deck {
     }
 }
 class Player {
-    constructor(name,score,amountOfCards,player1,player2){
+    constructor(name,score){
         this.name = name;
         this.score = score;
-        this.amountofCards = amountOfCards;
-        this.player1 = player1;
-        this.player2 = player2;
-
 }
+
 }
