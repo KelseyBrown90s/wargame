@@ -31,13 +31,9 @@ class Player {
         
     }
 }
-class warGame {
-        constructor(){
-            this.player1 = player1;
-            this.player2 = player2;
-            this.scores = [0,0];
-            this.cards = [];
-            this.cards.push(2 + "of" + diamonds);
+class Deck {
+            constructor(cards){
+                this.cards.push(2 + "of" + diamonds);
             this.cards.push(3 + "of" + diamonds);
             this.cards.push(4 + "of" + diamonds);
             this.cards.push(5 + "of" + diamonds);
@@ -91,6 +87,30 @@ class warGame {
             this.cards.push(ace + "of" + spades);
            
            
+            }
+                 shuffle(){
+                        let currentIndex=array.length , randomIndex;
+            }
+                deal(){
+                    let player1hand = [];
+                    let player2hand = [];
+                    for(let i=0; i<this.Deck.length;i++){
+                        player1hand.push[i];
+                        i++;
+                        playerhand2.push[i];
+                    }
+                }
+        
+class warGame {
+        constructor(){
+            this.player1 = player1;
+            this.player2 = player2;
+            this.scores = [0,0];
+            this.cards = [];
+          
+          
+           
+           
 
             //both players score will start at 0, there are always going to be only two players structured into the game,I went ahead and included evry cards specific value with their properties being up above in card.
         }
@@ -121,20 +141,4 @@ class warGame {
             console.log(winner + "is the winner!");
         
     
-        class Deck {
-            constructor(cards){
-            }
-                 shuffle(){
-                        let currentIndex=array.length , randomIndex;
-            }
-                deal(){
-                    let player1hand = [];
-                    let player2hand = [];
-                    for(let i=0; i<this.Deck.length;i++){
-                        player1hand.push[i];
-                        i++;
-                        playerhand2.push[i];
-                    }
-                }
-        }
-
+        
